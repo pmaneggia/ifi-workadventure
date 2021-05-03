@@ -4,3 +4,4 @@ Beginning with the WorkAdventure starter kit to build your own map for [WorkAdve
 
 Tutorial for the starter kit to be found at [https://workadventu.re/map-building](https://workadventu.re/map-building).
 
+To use this map visit [https://play.workadventu.re/_/global/pmaneggia/ifi-workadventure/map.json]{https://play.workadventu.re/_/global/pmaneggia/ifi-workadventure/map.json}
