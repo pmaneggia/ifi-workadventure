@@ -1,6 +1,7 @@
 # WorkAdventure Map Starter Kit
 
-This is a starter kit to help you build your own map for [WorkAdventure](https://workadventu.re).
+Beginning with the WorkAdventure starter kit to build your own map for [WorkAdventure](https://workadventu.re), a new project for the Praktikum in SS 2021.
 
-To understand how to use this starter kit, follow the tutorial at [https://workadventu.re/map-building](https://workadventu.re/map-building).
+Tutorial for the starter kit to be found at [https://workadventu.re/map-building](https://workadventu.re/map-building).
 
+To use this map visit [https://play.workadventu.re/_/global/pmaneggia/ifi-workadventure/map.json]{https://play.workadventu.re/_/global/pmaneggia/ifi-workadventure/map.json}
