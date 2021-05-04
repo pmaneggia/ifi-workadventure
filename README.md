@@ -6,7 +6,7 @@ Tutorial for the starter kit to be found at [https://workadventu.re/map-building
 
 To use this map visit https://play.workadventu.re/_/global/pmaneggia.github.io/ifi-workadventure/map.json
 
-## MAP RULES
+### MAP RULES
 from https://workadventu.re/map-building/wa-maps
 
 In order to design a map that will be readable by WorkAdventure, you will have to respect some constraints.
@@ -31,7 +31,7 @@ More things that I know so far:
 * you can define some tiles as "silent" (value "s") -> no video conference get started there
 * you can embed at certain position anything embeddable -> how to?
 
-## BUILDING WALLS AND "COLLIDABLE" AREAS
+### BUILDING WALLS AND "COLLIDABLE" AREAS
 from https://workadventu.re/map-building/wa-maps
 
 By default, the characters can traverse any tiles. If you want to prevent your characeter from going through a tile (like a wall or a desktop), you must make this tile "collidable". You can do this by settings the collides property on a given tile.
@@ -48,12 +48,12 @@ To make a tile "collidable", you should:
 
 https://workadventu.re/map-building/entry-exit
 
-# DEFINING A DEFAULT ENTRY POINT
+#### DEFINING A DEFAULT ENTRY POINT
 In order to define a default start position, you MUST create a layer named "start" on your map. This layer MUST contain at least one tile. The players will start on the tile of this layer. If the layer contains many tiles, the players will start **randomly** on one of those tiles.
 
 **Pro tip**: if you expect many people to connect to your map at the same time (for instance, if you are organizing a big event), consider making a large start zone. This way, users will not all appear at the same position and will not pop randomly in a chat with someone connecting at the same moment.
 
-# DEFINING EXITS
+#### DEFINING EXITS
 In order to place an exit on your scene that leads to another scene:
 
 * You must create a specific layer. When a character reaches ANY tile of that layer, it will exit the scene.
