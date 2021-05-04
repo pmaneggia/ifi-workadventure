@@ -13,9 +13,9 @@ In order to design a map that will be readable by WorkAdventure, you will have t
 
 In particular, you will need to:
 
-* set a start position for the players -> !!! this means having a layer called "start" with one nut zero position, which is the starting point (and can also define a tile) - my interpretation, not found in the tutorial !!!
-* configure the "floor layer" (so that WorkAdventure can correctly display characters above the floor, but under the ceiling)
-* eventually, you can place exits that link to other maps -> !!! more to say here !!!
+* set a start position for the players. This means having a layer called "start" with at least one tile, see section "ENTRIES AND EXITS". If there are more tiles the starting point will be chosen randomly amond those.
+* configure the "floor layer" (so that WorkAdventure can correctly display characters above the floor, but under the ceiling).
+* it will be possible to use exit to other scenes, say "ENTRIES AND EXITS" below.
 
 A few things to notice:
 
@@ -60,5 +60,5 @@ In order to define a default start position, you MUST create a layer named "star
 In order to place an exit on your scene that leads to another scene:
 
 * You must create a specific layer. When a character reaches ANY tile of that layer, it will exit the scene.
-* In layer properties, you MUST add "exitUrl" property. It represents the URL of the next scene. You can put relative or absolute URLs.
+* In **layer properties**, you MUST add an "exitUrl" property. It represents the URL of the next scene. You can put relative or absolute URLs.
 * If you want to have multiple exits, you can create many layers. Each layer has a different key exitUrl and has tiles that represent exits to another scene.
