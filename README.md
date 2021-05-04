@@ -13,9 +13,9 @@ In order to design a map that will be readable by WorkAdventure, you will have t
 
 In particular, you will need to:
 
-* set a start position for the players -> !!! this means having a layer called "start" with one nut zero position, which is the starting point (and can also define a tile) - my interpretation, not found in the tutorial !!!
-* configure the "floor layer" (so that WorkAdventure can correctly display characters above the floor, but under the ceiling)
-* eventually, you can place exits that link to other maps -> !!! more to say here !!!
+* set a start position for the players. This means having a layer called "start" with at least one tile, see section "ENTRIES AND EXITS". If there are more tiles the starting point will be chosen randomly amond those.
+* configure the "floor layer" (so that WorkAdventure can correctly display characters above the floor, but under the ceiling).
+* it will be possible to use exit to other scenes, say "ENTRIES AND EXITS" below.
 
 A few things to notice:
 
