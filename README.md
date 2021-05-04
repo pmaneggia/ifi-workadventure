@@ -26,6 +26,8 @@ A few things to notice:
 * WorkAdventure doesn't support object layers and will ignore them
 * If you are starting from a blank map, your map MUST be orthogonal and tiles size should be 32x32.
 
+Notice (my observation) - about "floorLayer": In Tiled I can not edit the type of a layer? If I edit in a text editor the json file and I change "type"="tileLayer" to "type"="objectgroup" the layer will be displayed in Tiled as an objectLayer. But we said, that layers of type obectLayer are ignored by WorkAdventure. Also I now see that my first map this layer has "visible":"false" ... I do not rember ever setting this, but now I did it also for the second map.
+
 More things that I know so far:
 
 * you can define some tiles as "silent" (value "s") -> no video conference get started there
@@ -62,3 +64,7 @@ In order to place an exit on your scene that leads to another scene:
 * You must create a specific layer. When a character reaches ANY tile of that layer, it will exit the scene.
 * In **layer properties**, you MUST add an "exitUrl" property. It represents the URL of the next scene. You can put relative or absolute URLs.
 * If you want to have multiple exits, you can create many layers. Each layer has a different key exitUrl and has tiles that represent exits to another scene.
+
+Note: in older releases of WorkAdventure, you could link to a map file directly using properties exitSceneUrl and exitInstance. Those properties are now **deprecated**. Use "exitUrl" instead.
+
+#### UNDERSTANDING MAP URLS IN WORKADVENTURE
