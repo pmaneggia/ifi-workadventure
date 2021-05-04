@@ -60,5 +60,5 @@ In order to define a default start position, you MUST create a layer named "star
 In order to place an exit on your scene that leads to another scene:
 
 * You must create a specific layer. When a character reaches ANY tile of that layer, it will exit the scene.
-* In layer properties, you MUST add "exitUrl" property. It represents the URL of the next scene. You can put relative or absolute URLs.
+* In **layer properties**, you MUST add an "exitUrl" property. It represents the URL of the next scene. You can put relative or absolute URLs.
 * If you want to have multiple exits, you can create many layers. Each layer has a different key exitUrl and has tiles that represent exits to another scene.
