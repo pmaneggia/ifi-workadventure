@@ -44,6 +44,18 @@ To make a tile "collidable", you should:
 1 Please add a collides property. The type of the property must be bool.
 1 finally, check the checkbox for the collides property
 
-## ENTRIES AND EXITS
+### ENTRIES AND EXITS
 
 https://workadventu.re/map-building/entry-exit
+
+# DEFINING A DEFAULT ENTRY POINT
+In order to define a default start position, you MUST create a layer named "start" on your map. This layer MUST contain at least one tile. The players will start on the tile of this layer. If the layer contains many tiles, the players will start **randomly** on one of those tiles.
+
+**Pro tip**: if you expect many people to connect to your map at the same time (for instance, if you are organizing a big event), consider making a large start zone. This way, users will not all appear at the same position and will not pop randomly in a chat with someone connecting at the same moment.
+
+# DEFINING EXITS
+In order to place an exit on your scene that leads to another scene:
+
+* You must create a specific layer. When a character reaches ANY tile of that layer, it will exit the scene.
+* In layer properties, you MUST add "exitUrl" property. It represents the URL of the next scene. You can put relative or absolute URLs.
+* If you want to have multiple exits, you can create many layers. Each layer has a different key exitUrl and has tiles that represent exits to another scene.
