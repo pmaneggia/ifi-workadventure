@@ -6,8 +6,8 @@ Tutorial for the starter kit to be found at [https://workadventu.re/map-building
 
 To use this map visit https://play.workadventu.re/_/global/pmaneggia.github.io/ifi-workadventure/map.json
 
-## Map Rules
-from [https://workadventu.re/map-building/wa-maps]{https://workadventu.re/map-building/wa-maps}
+## MAP RULES
+from https://workadventu.re/map-building/wa-maps
 
 In order to design a map that will be readable by WorkAdventure, you will have to respect some constraints.
 
@@ -32,13 +32,14 @@ More things that I know so far:
 * you can embed at certain position anything embeddable -> how to?
 
 ## BUILDING WALLS AND "COLLIDABLE" AREAS
+from https://workadventu.re/map-building/wa-maps
 
 By default, the characters can traverse any tiles. If you want to prevent your characeter from going through a tile (like a wall or a desktop), you must make this tile "collidable". You can do this by settings the collides property on a given tile.
 
 To make a tile "collidable", you should:
 
 1 select the relevant tileset and switch to "edit" mode
-1 right click on a tile of the tileset to select it
+1 right click on a tile of the tileset to select it - NOTICE: in my version it did not work with right click, I had to select "properties" from menu view > views and toolbars
 1 on the left pane in the custom properties section, right click and select "Add properties":
 1 Please add a collides property. The type of the property must be bool.
 1 finally, check the checkbox for the collides property
