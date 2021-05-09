@@ -75,6 +75,7 @@
          "y":0
         }, 
         {
+         "height":5,
          "id":1,
          "name":"floorLayer",
          "objects":[],
