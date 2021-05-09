@@ -15,7 +15,7 @@ In particular, you will need to:
 
 * set a start position for the players. This means having a layer called "start" with at least one tile, see section "ENTRIES AND EXITS". If there are more tiles the starting point will be chosen randomly amond those.
 * configure the "floor layer" (so that WorkAdventure can correctly display characters above the floor, but under the ceiling).
-* it will be possible to use exit to other scenes, say "ENTRIES AND EXITS" below.
+* it will be possible to use exit to other scenes, see "ENTRIES AND EXITS" below.
 
 A few things to notice:
 
@@ -26,12 +26,12 @@ A few things to notice:
 * WorkAdventure doesn't support object layers and will ignore them
 * If you are starting from a blank map, your map MUST be orthogonal and tiles size should be 32x32.
 
-Notice (my observation) - about "floorLayer": In Tiled I can not edit the type of a layer? If I edit in a text editor the json file and I change "type"="tileLayer" to "type"="objectgroup" the layer will be displayed in Tiled as an objectLayer. But we said, that layers of type obectLayer are ignored by WorkAdventure. Also I now see that my first map this layer has "visible":"false" ... I do not rember ever setting this, but now I did it also for the second map.
+Notice (my observation) - about "floorLayer": In Tiled I can not edit the type of a layer? If I edit in a text editor the json file and I change "type"="tileLayer" to "type"="objectgroup" the layer will be displayed in Tiled as an objectLayer. But we said, that layers of type obectLayer are ignored by WorkAdventure.
 
 More things that I know so far:
 
-* you can define some tiles as "silent" (value "s") -> no video conference get started there
-* you can embed at certain position anything embeddable -> how to?
+* you can define some tiles or what as "silent" (value "s") -> no video conference get started there
+* you can embed at certain position anything embeddable -> how?
 
 ### BUILDING WALLS AND "COLLIDABLE" AREAS
 
@@ -42,9 +42,9 @@ By default, the characters can traverse any tiles. If you want to prevent your c
 To make a tile "collidable", you should:
 
 1. select the relevant tileset and switch to "edit" mode
-1. right click on a tile of the tileset to select it - NOTICE: in my version it did not work with right click, I had to select "properties" from menu view > views and toolbars
+1. right click on a tile of the tileset to select it - NOTICE: also accessible from menu view > views and toolbars > properties
 1. on the left pane in the custom properties section, right click and select "Add properties":
-1. Please add a collides property. The type of the property must be bool.
+1. Please add a collides property. The type of the property must be bool
 1. finally, check the checkbox for the collides property
 
 ### ENTRIES AND EXITS
